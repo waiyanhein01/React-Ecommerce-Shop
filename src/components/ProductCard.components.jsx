@@ -1,9 +1,10 @@
 import React from "react";
 import StarRatingComponents from "./StarRating.components";
+import { Link } from "react-router-dom";
 
 const ProductCardComponents = ({ product: { id, title, price, image, rating:{rate} } }) => {
   return (
-    <div className=" bg-white border flex flex-col border-neutral-50 rounded-md p-5 gap-3">
+    <Link to={`/product-detail/${id}`} className=" bg-white border flex flex-col border-neutral-50 rounded-md p-5 gap-3">
       <img src={image} alt="" className=" h-40 mx-auto my-auto mb-5" />
       <h1 className=" font-bold line-clamp-1 mt-auto">{title}</h1>
       <span className="">
@@ -15,7 +16,7 @@ const ProductCardComponents = ({ product: { id, title, price, image, rating:{rat
           Add Cart
         </button>
       </div>
-    </div>
+    </Link>
   );
 };
 
