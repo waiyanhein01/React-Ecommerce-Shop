@@ -6,13 +6,11 @@ import ContainerComponents from "./Container.components";
 
 const MainComponents = () => {
   return (
-    <div className="bg-slate-900">
-      <ContainerComponents className="flex flex-col p-5 h-auto w-auto">
-        <HeaderComponents />
-        <Outlet />
-        <FooterComponents />
-      </ContainerComponents>
-    </div>
+    <ContainerComponents className="">
+      <HeaderComponents />
+      <Outlet />
+      <FooterComponents />
+    </ContainerComponents>
   );
 };
 

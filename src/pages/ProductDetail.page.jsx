@@ -3,6 +3,7 @@ import products from "../data/products";
 import { useParams } from "react-router-dom";
 import { ContainerComponent } from "../components";
 import StarRatingComponents from "../components/StarRating.components";
+import BreadcrumbComponents from "../components/Breadcrumb.components";
 
 const ProductDetailPage = () => {
   const { productId } = useParams();
@@ -10,7 +11,8 @@ const ProductDetailPage = () => {
   const currentProduct = products.find((product) => product.id == productId);
   return (
     <ContainerComponent>
-      <div className=" border bg-white mt-20 px-16 py-20 rounded-md">
+      <BreadcrumbComponents currentProductPage={"ProductDetail"}/>
+      <div className=" border bg-white mt-10 px-16 py-20 rounded-md">
         <div className=" flex justify-between items-center gap-10">
           <img src={currentProduct.image} alt="" className=" h-60" />
           <div className=" space-y-3">
