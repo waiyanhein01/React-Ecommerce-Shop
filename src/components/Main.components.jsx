@@ -6,11 +6,11 @@ import ContainerComponents from "./Container.components";
 
 const MainComponents = () => {
   return (
-    <ContainerComponents className="">
+      <>
       <HeaderComponents />
       <Outlet />
       <FooterComponents />
-    </ContainerComponents>
+      </>
   );
 };
 

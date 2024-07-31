@@ -1,14 +1,15 @@
 import React from 'react'
-import products from '../data/products'
 import { ContainerComponent } from '../components'
 import BreadcrumbComponents from '../components/Breadcrumb.components'
+import CartGroupComponents from '../components/CartGroup.components'
 
 const MyCartPage = () => {
 
   // const currentProduct = products.find((product) => product.id == pro)
   return (
-    <ContainerComponent>
+    <ContainerComponent className={"h-auto"}>
       <BreadcrumbComponents currentProductPage={"MyCart"}/>
+      <CartGroupComponents/>
     </ContainerComponent>
   )
 }

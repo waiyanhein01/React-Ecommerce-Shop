@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import { ContainerComponent } from "../components";
 import StarRatingComponents from "../components/StarRating.components";
 import BreadcrumbComponents from "../components/Breadcrumb.components";
+import carts from "../data/carts";
 
 const ProductDetailPage = () => {
   const { productId } = useParams();
