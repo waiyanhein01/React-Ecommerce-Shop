@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FiChevronRight } from "react-icons/fi";
 
 const BreadcrumbComponents = ({currentProductPage}) => {
   return (
-    <div className=' flex gap-2 mt-5'>
+    <div className=' flex items-center gap-1 mt-5'>
       <Link to={"/"} className=' text-neutral-400'>Back</Link>
-      <span className=' text-neutral-50'>/</span>
+      <span className=' text-neutral-50'><FiChevronRight /></span>
       <p className=" text-neutral-50">{currentProductPage}</p>
     </div>
   )
