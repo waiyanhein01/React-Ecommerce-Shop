@@ -12,7 +12,7 @@ const HeaderComponents = () => {
         </Link>
         <Link to={"/my-cart"} className="relative">
           <span className=" text-neutral-50"><HiOutlineShoppingBag className=" w-7 h-7" /></span>
-          <span className="px-2 text-xs translate-x-[0.2rem] -translate-y-[1.1rem]  absolute text-white">
+          <span className="px-2 text-xs translate-x-[0.2rem] -translate-y-[1.1rem] text-red-400 absolute">
             2
           </span>
         </Link>
