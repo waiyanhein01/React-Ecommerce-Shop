@@ -15,7 +15,7 @@ const ProductCardComponents = ({
   return (
     <Link
       to={`/product-detail/${id}`}
-      className=" bg-white border flex flex-col border-neutral-50 rounded-md p-5 gap-3"
+      className=" bg-white border flex flex-col border-neutral-100 rounded-md p-5 gap-3"
     >
       <img src={image} alt="" className=" h-40 mx-auto my-auto mb-5" />
       <h1 className=" font-bold line-clamp-1 mt-auto">{title}</h1>

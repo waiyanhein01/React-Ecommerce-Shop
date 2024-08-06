@@ -6,8 +6,8 @@ const BreadcrumbComponents = ({currentProductPage}) => {
   return (
     <div className=' flex items-center gap-1 mt-5'>
       <Link to={"/"} className=' text-neutral-400'>Back</Link>
-      <span className=' text-neutral-50'><FiChevronRight /></span>
-      <p className=" text-neutral-50">{currentProductPage}</p>
+      <span className=' text-neutral-900'><FiChevronRight /></span>
+      <p className=" text-neutral-900">{currentProductPage}</p>
     </div>
   )
 }

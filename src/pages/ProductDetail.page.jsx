@@ -13,7 +13,7 @@ const ProductDetailPage = () => {
   return (
     <ContainerComponent>
       <BreadcrumbComponents currentProductPage={"ProductDetail"}/>
-      <div className=" border bg-white mt-10 px-16 py-20 rounded-md">
+      <div className=" border bg-white mt-5 mb-5 px-16 py-20 rounded-md">
         <div className=" flex justify-between items-center gap-10">
           <img src={currentProduct.image} alt="" className=" h-60" />
           <div className=" space-y-3">
