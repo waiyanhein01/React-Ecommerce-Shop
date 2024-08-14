@@ -1,12 +1,23 @@
 import React from "react";
+import useCategoryStore from "../store/useCategoryStore";
 
-const CategoryBtnComponents = ({ categoryName, current }) => {
+const CategoryBtnComponents = ({ category: { id, name, isActive } }) => {
+  const { activeCategoryBtn } = useCategoryStore();
+  const handleActiveBtn = () => {
+    activeCategoryBtn(id);
+  };
+
   return (
     <div>
       <button
-        className={`border ${current ? " bg-neutral-900 text-white active:scale-90 duration-200" : "bg-white"} border-neutral-100 px-4 py-1 rounded-md text-nowrap text-sm`}
+        onClick={handleActiveBtn}
+        className={`border active:scale-90 duration-200 ${
+          isActive
+            ? " bg-neutral-900 text-white"
+            : "bg-white"
+        } border-neutral-100 px-4 py-1 rounded-md text-nowrap text-sm`}
       >
-        {categoryName}
+        {name}
       </button>
     </div>
   );

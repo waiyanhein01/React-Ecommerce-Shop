@@ -1,17 +1,22 @@
 import React from "react";
 import { CiCircleMinus, CiCirclePlus } from "react-icons/ci";
+import useProductStore from "../store/useProductStore";
 
-const CartComponents = ({ cart }) => {
-  // console.log(cart)
+const CartComponents = ({ cart:{id,productId,quantity} }) => {
+  const {products} = useProductStore()
+
+  const product = products.find((el) => el.id === productId )
+
+  const cost = product.price * quantity
   return (
     <div className=" bg-white rounded-md px-5 py-3 flex justify-between items-center gap-5 ">
-      <div className=" flex justify-between items-center gap-10">
-        <img src={cart.product.image} alt="" className=" h-14" />
+      <div className=" flex justify-between items-center gap-5">
+        <img src={product.image} alt="" className=" h-14" />
 
         <div className="">
-          <h1 className="">{cart.product.title}</h1>
+          <h1 className="">{product.title}</h1>
           <span className=" text-neutral-500">
-            price: ($ {cart.product.price})
+            price: <span className="font-mono font-semibold text-neutral-900">${product.price}</span>
           </span>
         </div>
       </div>
@@ -22,7 +27,7 @@ const CartComponents = ({ cart }) => {
           <button className="">
             <CiCircleMinus className=" w-6 h-6" />
           </button>
-          <span>{cart.quantity}</span>
+          <span>{quantity}</span>
           <button className="">
             <CiCirclePlus className=" w-6 h-6" />
           </button>
@@ -30,7 +35,7 @@ const CartComponents = ({ cart }) => {
       </div>
 
       <div className="">
-        <span className=" font-bold text-right">$ {cart.price}</span>
+        <span className=" font-bold text-right font-mono">$ {cost.toFixed(2)}</span>
       </div>
     </div>
   );

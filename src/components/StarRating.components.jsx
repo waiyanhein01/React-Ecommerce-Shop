@@ -14,6 +14,7 @@ const StarRatingComponents = ({ rate }) => {
           strokeWidth={1.5}
           stroke="currentColor"
           className={`size-6 ${ num <= currentRate && "fill-yellow-500"} stroke-yellow-500`}
+          key={num}
         >
           <path
             strokeLinecap="round"

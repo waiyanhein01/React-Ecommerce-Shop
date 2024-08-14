@@ -1,12 +1,12 @@
 import React from "react";
 import ProductCardComponents from "./ProductCard.components";
 import ContainerComponents from "./Container.components";
-import products from "../data/products";
+import useProductStore from "../store/useProductStore";
 
 const ProductCardGroupComponents = () => {
-  
+  const {products} = useProductStore()
   return (
-    <ContainerComponents>
+    <ContainerComponents className="px-5 md:px-0">
       <div className=" mt-5 mb-5">
         <h1 className=" mb-3 text-sm">Available Product Lists</h1>
 

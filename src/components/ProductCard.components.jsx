@@ -23,7 +23,7 @@ const ProductCardComponents = ({
         <StarRatingComponents rate={rate} />
       </span>
       <div className=" flex justify-between items-center">
-        <span className="">Price ($ {price})</span>
+        <span className=" ">Price: <span className=" font-mono font-semibold">${price}</span></span>
         {carts.find((cart) => cart.id == id) ? (
           <button className=" border border-neutral-700 bg-black text-white text-xs rounded-md px-3 py-1 active:scale-90 duration-200 text-nowrap">
             Added
