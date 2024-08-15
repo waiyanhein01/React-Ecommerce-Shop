@@ -1,12 +1,14 @@
 import React from "react";
-import products from "../data/products";
 import { useParams } from "react-router-dom";
 import { ContainerComponent } from "../components";
 import StarRatingComponents from "../components/StarRating.components";
 import BreadcrumbComponents from "../components/Breadcrumb.components";
+import useProductStore from "../store/useProductStore";
 
 const ProductDetailPage = () => {
   const { productId } = useParams();
+
+  const {products} = useProductStore()
 
   const currentProduct = products.find((product) => product.id == productId);
   return (

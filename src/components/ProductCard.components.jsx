@@ -1,7 +1,7 @@
 import React from "react";
 import StarRatingComponents from "./StarRating.components";
 import { Link } from "react-router-dom";
-import carts from "../data/carts";
+import useCartStore from "../store/useCartStore";
 
 const ProductCardComponents = ({
   product: {
@@ -12,6 +12,7 @@ const ProductCardComponents = ({
     rating: { rate },
   },
 }) => {
+  const {carts} = useCartStore()
   return (
     <Link
       to={`/product-detail/${id}`}
@@ -24,7 +25,7 @@ const ProductCardComponents = ({
       </span>
       <div className=" flex justify-between items-center">
         <span className=" ">Price: <span className=" font-mono font-semibold">${price}</span></span>
-        {carts.find((cart) => cart.id == id) ? (
+        {carts.find((cart) => cart.productId == id) ? (
           <button className=" border border-neutral-700 bg-black text-white text-xs rounded-md px-3 py-1 active:scale-90 duration-200 text-nowrap">
             Added
           </button>

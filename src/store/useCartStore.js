@@ -1,6 +1,6 @@
 import { create } from "zustand";
 
-const useCartStore = create(() => ({
+const useCartStore = create((set) => ({
   carts: [
     {
       id: 1,
@@ -13,6 +13,24 @@ const useCartStore = create(() => ({
       quantity: 1,
     },
   ],
+
+  incrementCartBtn: (id) =>
+    set((state) => ({
+      carts: state.carts.map((el) =>
+        el.id === id ? { ...el, quantity: el.quantity + 1 } : el
+      ),
+  })),
+
+  decrementCartBtn: (id) =>
+    set((state) => ({
+      carts: state.carts.map((el) =>
+        el.id === id ? { ...el, quantity: el.quantity - 1 } : el
+      ),
+  })),
+
+  cartQuantityDelete: (id) => set((state) => ({
+    carts: state.carts.filter((el) => el.id !== id )
+  }))
 }));
 
 export default useCartStore;
