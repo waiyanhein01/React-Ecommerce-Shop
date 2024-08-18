@@ -8,13 +8,13 @@ import useCartStore from "../store/useCartStore";
 import toast from "react-hot-toast";
 
 const ProductDetailPage = () => {
-  const { productId } = useParams();
+  const { productSlug } = useParams();
 
   const { products } = useProductStore();
 
   const {carts,addCart} = useCartStore()
 
-  const currentProduct = products.find((product) => product.id == productId);
+  const currentProduct = products.find((product) => product.slug == productSlug);
 
   const {id,image,category, title, description,rating:{rate}} =currentProduct
 
@@ -27,14 +27,14 @@ const ProductDetailPage = () => {
     addCart(newCart);
   };
 
-  const handleAddedCartBtn = (event) => {
+  const handleAddedCartBtn = () => {
     toast.error("You already added to My cart")
   }
 
   return (
     <ContainerComponent className="px-5 md:px-0">
       <BreadcrumbComponents currentProductPage={"ProductDetail"} />
-      <div className=" border bg-white mt-5 mb-5 md:px-16 md:py-20 p-5 rounded-md">
+      <div className=" border border-neutral-300 bg-white mt-5 mb-5 md:px-16 md:py-20 p-5 rounded-md">
         <div className=" flex flex-col justify-between items-center gap-10">
           <img src={image} alt="" className=" h-56" />
           <div className=" space-y-3">

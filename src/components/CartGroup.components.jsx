@@ -46,22 +46,22 @@ const CartGroupComponents = () => {
       <div className=" relative bottom-5 left-0 w-full mt-5">
         <ContainerComponents className="px-5 md:px-0">
           <div className=" border-t border-neutral-950 mb-5">
-            <div className="mt-3 flex justify-end gap-10">
+            <div className="mt-3 flex justify-end md:gap-10 gap-5">
               <div className=" ">
-                <h1 className=" text-neutral-400">Total($)</h1>
+                <h1 className=" text-neutral-500">Total($)</h1>
                 <p className=" text-right font-mono font-semibold">
                   {total.toFixed(2)}
                 </p>
               </div>
               <div className="">
-                <h1 className=" text-neutral-400">Tax(5%)</h1>
-                <p className=" text-right text-xl font-mono font-semibold">
+                <h1 className=" text-neutral-500">Tax(5%)</h1>
+                <p className=" text-right text-lg md:text-xl font-mono font-semibold">
                   {tax.toFixed(2)}
                 </p>
               </div>
               <div className="">
-                <h1 className=" text-neutral-400">Net Total($)</h1>
-                <p className=" text-right text-2xl font-bold font-mono">
+                <h1 className=" text-neutral-500 text-nowrap">Net Total($)</h1>
+                <p className=" text-right text-xl md:text-2xl font-bold font-mono">
                   {netTotal.toFixed(2)}
                 </p>
               </div>

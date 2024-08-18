@@ -5,21 +5,26 @@ import { HiOutlineShoppingBag } from "react-icons/hi2";
 import useCartStore from "../store/useCartStore";
 
 const HeaderComponents = () => {
-  const {carts} = useCartStore()
+  const { carts } = useCartStore();
   return (
     <div className=" bg-color-black p-5">
-       <ContainerComponents className={"flex justify-between items-center"}>
-       <Link to={"/"} className=" lg:text-3xl text-2xl font-bold text-neutral-50">
+      <ContainerComponents className={"flex justify-between items-center"}>
+        <Link
+          to={"/"}
+          className=" lg:text-3xl text-2xl font-bold text-neutral-50"
+        >
           Online Shop
         </Link>
         <Link to={"/my-cart"} className="relative">
-          <span className=" text-neutral-50"><HiOutlineShoppingBag className=" w-7 h-7" /></span>
-          <span className="px-2 text-xs translate-x-[0.2rem] -translate-y-[1.1rem] text-red-50 text-center absolute">
-          {carts.length}
+          <span className=" text-neutral-50">
+            <HiOutlineShoppingBag className=" w-7 h-7" />
+            <span className="px-2 text-xs translate-x-[0.2rem] -translate-y-[1.1rem] text-red-50 text-center absolute">
+              {carts.length}
+            </span>
           </span>
         </Link>
-       </ContainerComponents>
-      </div>
+      </ContainerComponents>
+    </div>
   );
 };
 

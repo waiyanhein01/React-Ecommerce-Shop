@@ -11,6 +11,7 @@ const ProductCardComponents = ({
     price,
     image,
     rating: { rate },
+    slug
   },
 }) => {
   const { carts, addCart } = useCartStore();
@@ -33,12 +34,12 @@ const ProductCardComponents = ({
   const nav = useNavigate();
 
   const handleRouteDetailPage = () => {
-    nav(`/product-detail/${id}`);
+    nav(`/product-detail/${slug}`);
   };
   return (
     <div
       onClick={handleRouteDetailPage}
-      className=" bg-white border flex flex-col border-neutral-100 rounded-md p-5 gap-3 hover: cursor-pointer"
+      className=" bg-white border flex flex-col border-neutral-300 rounded-md p-5 gap-3 hover: cursor-pointer"
     >
       <img src={image} alt="" className=" h-40 mx-auto my-auto mb-5" />
       <h1 className=" font-bold line-clamp-1 mt-auto">{title}</h1>
@@ -47,7 +48,7 @@ const ProductCardComponents = ({
       </span>
       <div className=" flex justify-between items-center">
         <span className=" ">
-          Price: <span className=" font-mono font-semibold">${price}</span>
+          <span className=" font-mono font-semibold">${price}</span>
         </span>
         {carts.find((cart) => cart.productId == id) ? (
           <button onClick={handleAddedCartBtn} className=" border border-neutral-700 bg-black text-white text-xs rounded-md px-3 py-1 active:scale-90 duration-200 text-nowrap">
