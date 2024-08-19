@@ -1,6 +1,6 @@
 import React from "react";
 import StarRatingComponents from "./StarRating.components";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import useCartStore from "../store/useCartStore";
 import toast from "react-hot-toast";
 
@@ -41,7 +41,7 @@ const ProductCardComponents = ({
       onClick={handleRouteDetailPage}
       className=" bg-white border flex flex-col border-neutral-300 rounded-md p-5 gap-3 hover: cursor-pointer"
     >
-      <img src={image} alt="" className=" h-40 mx-auto my-auto mb-5" />
+      <img src={image} className=" h-40 mx-auto my-auto mb-5" />
       <h1 className=" font-bold line-clamp-1 mt-auto">{title}</h1>
       <span className="">
         <StarRatingComponents rate={rate} />

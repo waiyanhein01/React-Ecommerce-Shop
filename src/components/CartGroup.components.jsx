@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import useCartStore from "../store/useCartStore";
 import useProductStore from "../store/useProductStore";
 import Lottie from "lottie-react";
-import Empty from "../Lottie/Empty.json";
+import EmptyCart from "../Lottie/EmptyCart.json";
 
 const CartGroupComponents = () => {
   const { carts } = useCartStore();
@@ -21,18 +21,18 @@ const CartGroupComponents = () => {
 
   const netTotal = total + tax;
   return (
-    <div className=" flex flex-col gap-3 mt-5">
-      <div className=" h-[300px] gap-3 flex flex-col overflow-y-scroll bar-hide">
+    <div className=" h-[750px] md:h-[420px] flex flex-col gap-3 mt-5">
+      <div className=" gap-3 flex flex-col overflow-y-scroll bar-hide">
         {carts.length === 0 ? (
-          <div className=" flex flex-col items-center justify-center">
+          <div className=" flex flex-col items-center justify-center h-[600px]">
             {
               <Lottie
-                animationData={Empty}
+                animationData={EmptyCart}
                 loop={true}
-                className=" w-[270px]"
+                className=" w-[230px]"
               />
             }
-            <span>There is no carts.</span>
+            <span>There is no items.<Link to={"/"} className=" border border-neutral-950 px-3 py-1 rounded-lg ms-2 bg-neutral-950 text-neutral-50">Buy Now</Link></span>
           </div>
         ) : (
           <>

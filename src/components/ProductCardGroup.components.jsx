@@ -3,7 +3,6 @@ import ProductCardComponents from "./ProductCard.components";
 import ContainerComponents from "./Container.components";
 import useProductStore from "../store/useProductStore";
 import useCategoryStore from "../store/useCategoryStore";
-import Atropos from "atropos/react";
 
 const ProductCardGroupComponents = () => {
   const { products } = useProductStore();
