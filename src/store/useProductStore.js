@@ -287,6 +287,15 @@ const useProductStore = create(() => ({
       },
     },
   ]
+
+  // write for me sneaker 30 js array that include id,title,price,slug,description,category,picture,rating have two two object rate and count
+
+  // { id: 0, name: "All", isActive: true },
+  // { id: 1, name: "Basketball", isActive: false },
+  // { id: 2, name: "Casual", isActive: false },
+  // { id: 3, name: "Running", isActive: false },
+  // { id: 4, name: "Skate", isActive: false },
+  // { id: 5, name: "Training", isActive: false },
 }));
 
 export default useProductStore;

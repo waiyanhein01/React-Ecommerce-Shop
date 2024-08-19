@@ -17,7 +17,7 @@ const ProductCardGroupComponents = () => {
           {products
             .filter(
               (el) =>
-                currentCategory.name === "all" ||
+                currentCategory.name === "All" ||
                 el.category === currentCategory.name
             )
             .map((product) => (
