@@ -13,6 +13,14 @@ const ProductCardComponents = ({
     rating: { rate },
     slug
   },
+  // product : {
+  //   id,
+  //   name,
+  //   grid_picture_url,
+  //   story_html,
+  //   slug,
+  //   retail_price_cents
+  // }
 }) => {
   const { carts, addCart } = useCartStore();
 

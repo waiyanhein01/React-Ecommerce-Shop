@@ -6,6 +6,7 @@ import useCategoryStore from "../store/useCategoryStore";
 
 const ProductCardGroupComponents = () => {
   const { products } = useProductStore();
+  // console.log(products)
   const { categories } = useCategoryStore();
 
   const currentCategory = categories.find((el) => el.isActive === true);

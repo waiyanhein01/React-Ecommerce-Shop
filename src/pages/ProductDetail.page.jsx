@@ -16,7 +16,8 @@ const ProductDetailPage = () => {
 
   const currentProduct = products.find((product) => product.slug == productSlug);
 
-  const {id,image,category, title, description,rating:{rate}} =currentProduct
+  const {id,image,category,brand_name,price, title, description,rating:{rate}} =currentProduct
+  
 
   const handleAddCartBtn = () => {
     const newCart = {
@@ -38,16 +39,16 @@ const ProductDetailPage = () => {
         <div className=" flex flex-col justify-between items-center gap-10">
           <img src={image} alt="" className=" h-56" />
           <div className=" space-y-3">
-            <h1 className=" text-2xl font-bold">{title}</h1>
+            <h1 className=" text-xl md:text-2xl font-bold">{title}</h1>
             <h2 className=" bg-slate-300 rounded-md px-4 py-1 inline-block">
-              {category}
+              {brand_name}
             </h2>
             <p className="">{description}</p>
             <StarRatingComponents rate={rate} />
             <div className=" flex justify-between items-center">
               <span className="">
                 <span className=" font-mono font-bold text-lg">
-                  ${currentProduct.price}
+                  ${price}
                 </span>
               </span>
               {carts.find((cart) => cart.productId == id) ? (
