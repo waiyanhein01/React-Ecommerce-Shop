@@ -11,11 +11,11 @@ const CategoryBtnComponents = ({ category: { id, name, isActive } }) => {
     <div>
       <button
         onClick={handleActiveBtn}
-        className={`border active:scale-90 duration-200 ${
+        className={`border py-2 px-6 active:scale-90 duration-200 ${
           isActive
             ? " bg-neutral-900 text-white"
             : "bg-white"
-        } border-neutral-100 px-4 py-1 rounded-md text-nowrap text-sm`}
+        } border-neutral-300 px-4 py-1 rounded-md text-nowrap text-sm`}
       >
         {name}
       </button>
