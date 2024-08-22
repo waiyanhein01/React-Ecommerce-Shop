@@ -54,14 +54,14 @@ const ProductDetailPage = () => {
               {carts.find((cart) => cart.productId == id) ? (
                 <button
                 onClick={handleAddedCartBtn}
-                  className=" border border-neutral-700 bg-black text-white rounded-md px-3 py-1 active:scale-90 duration-200 text-nowrap"
+                  className=" border border-blue-500 bg-blue-500 text-white rounded-md px-3 py-1 active:scale-90 duration-200 text-nowrap"
                 >
                   Added
                 </button>
               ) : (
                 <button
                   onClick={handleAddCartBtn}
-                  className=" border border-neutral-700 rounded-md px-3 py-1 active:scale-90 duration-200 text-nowrap"
+                  className=" border border-blue-500 rounded-md px-3 py-1 active:scale-90 duration-200 text-nowrap"
                 >
                   Add Cart
                 </button>
