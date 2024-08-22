@@ -1,9 +1,11 @@
 import React from 'react'
-import { ContainerComponent, ProductCardGroup, ProductCategoryComponent } from '../components'
+import { ContainerComponent, HeroComponent, ProductCardGroup, ProductCategoryComponent, SliderComponent } from '../components'
 
 const HomePage = () => {
   return (
     <ContainerComponent>
+      {/* <SliderComponent/> */}
+      <HeroComponent/>
       <ProductCategoryComponent />
       <ProductCardGroup />
     </ContainerComponent>
