@@ -1,11 +1,12 @@
 import React from 'react'
-import { ContainerComponent, HeroComponent, ProductCardGroup, ProductCategoryComponent, SliderComponent } from '../components'
+import { ContainerComponent, FeatureSectionComponent, HeroSectionComponent, ProductCardGroup, ProductCategoryComponent } from '../components'
 
 const HomePage = () => {
   return (
     <ContainerComponent>
       {/* <SliderComponent/> */}
-      <HeroComponent/>
+      <HeroSectionComponent/>
+      <FeatureSectionComponent/>
       <ProductCategoryComponent />
       <ProductCardGroup />
     </ContainerComponent>

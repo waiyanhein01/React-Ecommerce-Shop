@@ -7,7 +7,7 @@ const ProductCategoryComponents = () => {
   const {categories} = useCategoryStore()
   return (
     <ContainerComponents className="px-5 md:px-0">
-      <div className=" mt-5">
+      <div className="mt-3">
         <h1 className=" mb-2 text-sm">Product Categories</h1>
         <div className=" flex gap-3 overflow-x-scroll bar-hide">
           {categories.map((category) => (

@@ -5,6 +5,8 @@ export {default as ProductCard} from "./ProductCard.components"
 export {default as ProductCardGroup} from "./ProductCardGroup.components"
 export {default as ContainerComponent} from "./Container.components"
 export {default as SliderComponent} from "./Slider.components"
-export {default as HeroComponent} from "./Hero.components"
+export {default as HeroSectionComponent} from "./HeroSection.components"
+export {default as FeatureSectionComponent} from "./FeatureSection.components"
+
 
 

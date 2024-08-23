@@ -21,8 +21,8 @@ const CartGroupComponents = () => {
 
   const netTotal = total + tax;
   return (
-    <div className=" h-[750px] md:h-[420px] flex flex-col gap-3 mt-5">
-      <div className=" gap-3 flex flex-col overflow-y-scroll bar-hide">
+    <div className=" h-[750px] md:h-[420px] flex flex-col  gap-3 mt-5">
+      <div className=" gap-3 flex flex-col flex-grow overflow-y-scroll bar-hide">
         {carts.length === 0 ? (
           <div className=" flex flex-col items-center justify-center h-[600px]">
             {

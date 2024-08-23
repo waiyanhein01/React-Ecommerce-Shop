@@ -7,7 +7,7 @@ const FooterComponents = () => {
   return (
     <div className=" mt-auto text-center bg-color-black ">
       <ContainerComponents>
-        <footer className="footer text-neutral-content items-center p-4">
+        <footer className="footer text-neutral-content justify-between items-center p-4">
           <aside className="grid-flow-col items-center">
             <img src={logo} alt="" className=" w-10" />
             <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
