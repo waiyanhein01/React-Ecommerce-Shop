@@ -66,7 +66,7 @@ const FeatureSectionComponents = () => {
       </div>
     </div>
     <div className=" flex justify-center">
-    <Link to={"/shop"} className=" mt-10 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Go to Shop</Link>
+    <Link to={"/shop"} className=" mt-10 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Shop Now</Link>
 
     </div>
   </div>

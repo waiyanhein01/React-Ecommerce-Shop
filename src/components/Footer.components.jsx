@@ -5,9 +5,9 @@ import ContainerComponents from "./Container.components";
 const FooterComponents = () => {
   const date = new Date();
   return (
-    <div className=" mt-auto text-center bg-color-black ">
+    <div className=" mt-auto text-center bg-color-custom ">
       <ContainerComponents>
-        <footer className="footer text-neutral-content justify-between items-center p-4">
+        <footer className="footer text-neutral-950 justify-between items-center p-4">
           <aside className="grid-flow-col items-center">
             <img src={logo} alt="" className=" w-10" />
             <p>Copyright © {new Date().getFullYear()} - All right reserved</p>

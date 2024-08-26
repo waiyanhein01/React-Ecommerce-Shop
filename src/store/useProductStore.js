@@ -518,7 +518,7 @@ const useProductStore = create(() => ({
       description:
         "Satisfaction Guaranteed. Return or exchange any order within 30 days. Designed and sold by Hafeez Center in the United States.   14k White Gold Weighs 0.6 Grams. 100% Satisfaction Guaranteed. Return or exchange any order within 30 days.",
       category: "jewelery",
-      image: "https://fakestoreapi.com/img/71sbRTjIHPL._AC_UL640_QL65_ML3_.jpg",
+      image: "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
       rating: { rate: 3.9, count: 70 },
       slug: "solid-gold-petite-micropave",
     },

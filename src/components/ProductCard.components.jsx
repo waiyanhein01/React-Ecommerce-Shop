@@ -13,14 +13,6 @@ const ProductCardComponents = ({
     rating: { rate },
     slug
   },
-  // product : {
-  //   id,
-  //   name,
-  //   grid_picture_url,
-  //   story_html,
-  //   slug,
-  //   retail_price_cents
-  // }
 }) => {
   const { carts, addCart } = useCartStore();
 
@@ -49,7 +41,7 @@ const ProductCardComponents = ({
       onClick={handleRouteDetailPage}
       className=" bg-white border flex flex-col border-neutral-300 rounded-md p-5 gap-3 hover: cursor-pointer"
     >
-      <img src={image} className=" h-40 mx-auto my-auto mb-5" />
+      <img src={image} className=" h-60 mx-auto my-auto mb-5" />
       <h1 className=" font-bold line-clamp-1 mt-auto">{title}</h1>
       <span className="">
         <StarRatingComponents rate={rate} />
