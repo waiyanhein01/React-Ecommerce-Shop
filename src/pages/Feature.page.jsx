@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const FeatureSectionComponents = () => {
+const FeaturePage = () => {
   return (
-    <section className="text-gray-600 body-font">
+    <section className="text-gray-600 body-font bg-color-gradient">
   <div className="container px-5 py-10 mx-auto">
     <div className="text-center mb-10">
       <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">Features</h1>
@@ -76,4 +76,4 @@ const FeatureSectionComponents = () => {
   )
 }
 
-export default FeatureSectionComponents
+export default FeaturePage

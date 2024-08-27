@@ -1,20 +1,20 @@
 import React from "react";
 import {
   ContainerComponent,
-  FeatureSectionComponent,
   HeroSectionComponent,
   ShowProductCardGroup,
 } from "../components";
+import FeaturePage from "./Feature.page";
 
 const HomePage = () => {
   return (
-    <>
+    <div className=" bg-color-gradient">
       <HeroSectionComponent />
       <ContainerComponent>
-        <FeatureSectionComponent />
+        <FeaturePage />
         <ShowProductCardGroup />
       </ContainerComponent>
-    </>
+    </div>
   );
 };
 

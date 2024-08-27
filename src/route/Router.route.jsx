@@ -5,7 +5,7 @@ import ProductDetailPage from "../pages/ProductDetail.page";
 import MainComponents from "../components/Main.components";
 import ErrorPage from "../pages/Error.page";
 import ShopPage from "../pages/Shop.page";
-import { FeatureSectionComponent } from "../components";
+import FeaturePage from "../pages/Feature.page";
 
 const router = createBrowserRouter([
   {
@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/feature",
-        element: <FeatureSectionComponent />,
+        element: <FeaturePage/>
       },
       {
         path: "/my-cart",

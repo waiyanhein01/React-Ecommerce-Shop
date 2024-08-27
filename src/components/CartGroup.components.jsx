@@ -45,7 +45,7 @@ const CartGroupComponents = () => {
 
       <div className=" relative bottom-5 left-0 w-full mt-5">
         <ContainerComponents className="px-5 md:px-0">
-          <div className=" border-t border-neutral-950 mb-5">
+          <div className=" border-t border-neutral-950 mb-3">
             <div className="mt-3 flex justify-end md:gap-10 gap-5">
               <div className=" ">
                 <h1 className=" text-neutral-500">Total($)</h1>

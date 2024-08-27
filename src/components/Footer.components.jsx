@@ -5,7 +5,7 @@ import ContainerComponents from "./Container.components";
 const FooterComponents = () => {
   const date = new Date();
   return (
-    <div className=" mt-auto text-center bg-color-custom ">
+    <div className=" mt-auto text-center bg-color-gradient shadow shadow-neutral-800 ">
       <ContainerComponents>
         <footer className="footer text-neutral-950 justify-between items-center p-4">
           <aside className="grid-flow-col items-center">

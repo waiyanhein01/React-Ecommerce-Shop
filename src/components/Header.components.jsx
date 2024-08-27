@@ -10,7 +10,7 @@ import { MdOutlineLocalGroceryStore } from "react-icons/md";
 const HeaderComponents = () => {
   const { carts } = useCartStore();
   return (
-    <div className=" bg-color-custom p-3">
+    <div className=" bg-color-gradient border-b-2 border-neutral-400 p-4">
       <ContainerComponents className={"flex justify-between items-center"}>
         <Link
           to={"/"}

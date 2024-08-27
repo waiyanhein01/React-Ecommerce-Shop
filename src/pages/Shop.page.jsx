@@ -1,13 +1,19 @@
-import React from 'react'
-import { ContainerComponent, ProductCardGroup, ProductCategoryComponent } from '../components'
+import React from "react";
+import {
+  ContainerComponent,
+  ProductCardGroup,
+  ProductCategoryComponent,
+} from "../components";
 
 const ShopPage = () => {
   return (
-    <ContainerComponent>
-      <ProductCategoryComponent />
-      <ProductCardGroup />
-    </ContainerComponent>
-  )
-}
+    <div className=" bg-color-gradient">
+      <ContainerComponent>
+        <ProductCategoryComponent />
+        <ProductCardGroup />
+      </ContainerComponent>
+    </div>
+  );
+};
 
-export default ShopPage
+export default ShopPage;
