@@ -47,7 +47,7 @@ const ProductDetailPage = () => {
       <ContainerComponent className="px-5 md:px-0">
         <BreadcrumbComponents currentProductPage={"ProductDetail"} />
         <div className=" border border-neutral-300 bg-white mt-5 mb-5 md:px-16 md:py-20 p-5 rounded-md">
-          <div className=" grid grid-cols-2 justify-between items-center gap-10">
+          <div className=" grid lg:grid-cols-2 grid-cols-1 justify-between items-center gap-10">
             <div className=" col-span-1">
               <div className="grid grid-cols-3 gap-3">
                 <div className=" col-span-3 mx-auto bg-neutral-100 p-3">

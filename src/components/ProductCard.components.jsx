@@ -42,6 +42,7 @@ const ProductCardComponents = ({
       className=" bg-white border flex flex-col border-neutral-300 rounded-md p-5 gap-3 hover: cursor-pointer"
     >
       <img src={image} className=" h-60 mx-auto my-auto mb-5" />
+      <div className=" border-b border-neutral-300"></div>
       <h1 className=" font-bold line-clamp-1 mt-auto">{title}</h1>
       <span className="">
         <StarRatingComponents rate={rate} />
