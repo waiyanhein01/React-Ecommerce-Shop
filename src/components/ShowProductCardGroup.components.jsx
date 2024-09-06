@@ -12,7 +12,8 @@ const ShowProductCardGroupComponents = () => {
   return (
     <ContainerComponents className="px-5 md:px-0">
       <div className=" mt-5 mb-5">
-        <h1 className=" mb-5 text-3xl text-center font-bold">Available Product Lists</h1>
+        <h1 className=" mb-5 text-3xl font-bold text-center">Our <span className=" text-blue-500">Popular</span> Products</h1>
+        <p className=" mb-5 text-neutral-500 text-center">Experience top-notch quality and style with our sought-after selections.Discover a world of comfort, design and value</p>
         <div className=" grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5">
           {products
             .slice(0, showProduct)
