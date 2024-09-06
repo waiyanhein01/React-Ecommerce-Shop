@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContainerComponents = ({children,className}) => {
   return (
-    <main className={ `lg:w-[1200px] md:w-[720px] w-full mx-auto ${className}`} >
+    <main className={ `w-full md:w-[700px] sm:w-[600px] lg:w-[1000px] mx-auto ${className}`} >
       {children}
     </main>
   )

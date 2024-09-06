@@ -6,6 +6,7 @@ import MainComponents from "../components/Main.components";
 import ErrorPage from "../pages/Error.page";
 import ShopPage from "../pages/Shop.page";
 import FeaturePage from "../pages/Feature.page";
+import { ContactPage } from "@mui/icons-material";
 
 const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/feature",
         element: <FeaturePage/>
+      },
+      {
+        path: "/contact",
+        element: <ContactPage/>
       },
       {
         path: "/my-cart",

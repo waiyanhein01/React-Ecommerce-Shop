@@ -67,7 +67,7 @@ const ProductDetailPage = () => {
                 </div>
               </div>
             </div>
-            <div className=" col-span-1">
+            <div className=" col-span-1 space-y-5">
               <h1 className=" text-xl md:text-2xl font-bold">{title}</h1>
               <h2 className=" bg-slate-300 rounded-md px-4 py-1 inline-block">
                 {brand_name}

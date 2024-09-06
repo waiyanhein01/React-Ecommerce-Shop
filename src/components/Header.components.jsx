@@ -27,6 +27,7 @@ const HeaderComponents = () => {
           <Link to={"/"} className=" hover:text-blue-500 hover:underline underline-offset-4 font-semibold">Home</Link>
           <Link to={"/shop"} className=" hover:text-blue-500 hover:underline underline-offset-4 font-semibold">Shop</Link>
           <Link to={"/feature"} className=" hover:text-blue-500 hover:underline underline-offset-4 font-semibold">Feature</Link>
+          <Link to={"/contact"} className=" hover:text-blue-500 hover:underline underline-offset-4 font-semibold">Contact Us</Link>
         </div>
         <Link to={"/my-cart"} className="relative hover:bg-blue-300 rounded-full p-3">
           <span className=" text-neutral-50">
