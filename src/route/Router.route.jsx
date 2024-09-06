@@ -6,7 +6,7 @@ import MainComponents from "../components/Main.components";
 import ErrorPage from "../pages/Error.page";
 import ShopPage from "../pages/Shop.page";
 import FeaturePage from "../pages/Feature.page";
-import { ContactPage } from "@mui/icons-material";
+import ContactPage from "../pages/Contact.page";
 
 const router = createBrowserRouter([
   {
