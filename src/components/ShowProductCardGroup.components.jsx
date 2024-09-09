@@ -26,7 +26,7 @@ const ShowProductCardGroupComponents = () => {
         </div>
 
         <div className=" flex justify-center mt-5">
-        <Link className=" bg-blue-500 text-neutral-50 border border-blue-500 rounded-lg px-4 py-2" to={"/shop"}>See More Products</Link>
+        <Link className=" bg-blue-500 hover:bg-blue-600 text-neutral-50 border border-blue-500 rounded-lg px-4 py-2" to={"/shop"}>See More Products</Link>
 
         </div>
 
