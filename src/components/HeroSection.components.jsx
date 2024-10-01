@@ -11,7 +11,7 @@ const HeroComponents = () => {
       </div>
       <div className="diff-item-2">
         <div className="bg-base-200 grid place-content-center text-9xl font-black">
-          Shop
+          SHOP
         </div>
       </div>
       <div className="diff-resizer"></div>
